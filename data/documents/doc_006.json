@@ -1,0 +1,7 @@
+{
+  "title": "Cryptocurrency Portfolio Allocation Strategy - Client 025",
+  "content": "Digital assets represent a high-risk, high-reward opportunity for qualified investors seeking portfolio diversification beyond traditional asset classes. Risk Assessment: Cryptocurrencies exhibit extreme volatility with potential for 50%+ drawdowns. Suitable only for investors with high risk tolerance, long investment horizons, and capital that can be placed at risk without impacting financial goals. Recommended Allocation: Maximum 5% of total portfolio value ($187,500 for client-025's $3.75M portfolio). Core Holdings: Bitcoin (60% of crypto allocation) serves as digital gold and store of value with established network security. Ethereum (25%) offers smart contract platform exposure with DeFi ecosystem growth. Diversified Altcoins: Remaining 15% distributed among Cardano, Solana, and Polygon for technology diversification and higher growth potential. Investment Approach: Dollar-cost averaging over 12 months reduces timing risk. Hardware wallet storage ensures security. Quarterly rebalancing maintains target allocations. No leverage or derivatives. Tax Planning: Cryptocurrency transactions create taxable events; meticulous record-keeping essential. Consider tax-loss harvesting opportunities. Expected Returns: Highly speculative, but potential for 25-100% appreciation over 3-5 years balanced against risk of total loss.",
+  "clientId": "client-025",
+  "documentType": "portfolio-recommendation",
+  "allowedAdvisors": ["advisor-005"]
+}

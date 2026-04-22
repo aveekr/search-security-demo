@@ -1,0 +1,7 @@
+{
+  "title": "Dividend Growth Strategy Report - Client 012",
+  "content": "This report outlines a comprehensive dividend growth strategy designed to generate consistent income while preserving capital and achieving moderate growth. Analysis Framework: We evaluated 150+ dividend-paying stocks across all sectors, focusing on companies with 10+ years of consecutive dividend increases, payout ratios below 60%, and strong free cash flow generation. Top Recommendations: Portfolio construction includes Dividend Aristocrats (Johnson & Johnson, Procter & Gamble, Coca-Cola), high-yield REITs (Realty Income, Digital Realty Trust), and dividend growth ETFs (Vanguard Dividend Appreciation). Proposed Allocation: 50% Dividend Aristocrats, 30% REITs and utilities, 15% dividend growth ETFs, 5% cash reserves. Current portfolio yield: 4.2%, projected yield on cost in 5 years: 6.8%. Income Generation: Based on client-012's $2.5M portfolio, expected annual dividend income of $105,000 with automatic reinvestment program to accelerate compounding. Risk management through sector diversification and quality focus ensures downside protection during market corrections.",
+  "clientId": "client-012",
+  "documentType": "portfolio-recommendation",
+  "allowedAdvisors": ["advisor-002", "advisor-004"]
+}

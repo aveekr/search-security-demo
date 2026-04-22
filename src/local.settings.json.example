@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    
+    "AZURE_SEARCH_ENDPOINT": "https://your-search-service.search.windows.net",
+    "AZURE_SQL_SERVER": "your-sql-server.database.windows.net",
+    "AZURE_SQL_DATABASE": "your-database-name",
+    "AZURE_OPENAI_ENDPOINT": "https://your-openai.openai.azure.com/",
+    "STORAGE_ACCOUNT_NAME": "your-storage-account",
+    "DOCUMENTS_CONTAINER": "documents",
+    
+    "SEARCH_INDEX_NAME": "capital-markets-docs",
+    "OPENAI_EMBEDDING_DEPLOYMENT": "text-embedding-ada-002",
+    "OPENAI_API_VERSION": "2024-02-01",
+    
+    "AZURE_CLIENT_ID": ""
+  }
+}

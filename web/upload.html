@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Search Demo - Upload</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./config.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="header">
+        <div>
+          <h1 class="title">Upload Documents</h1>
+          <p class="subtitle">Add new documents and assign advisor access scopes.</p>
+        </div>
+        <div class="toolbar">
+          <a class="btn btn-secondary" href="./index.html">Home</a>
+          <a class="btn btn-warning" href="./search.html">Search Page</a>
+          <button id="loginBtn" class="btn btn-primary">Sign in</button>
+          <button id="logoutBtn" class="btn btn-secondary hidden">Sign out</button>
+        </div>
+      </section>
+
+      <section class="card" id="sessionCard">
+        <span class="badge">Session</span>
+        <div id="sessionInfo" class="status">Not signed in</div>
+      </section>
+
+      <section class="card" style="margin-top: 16px;">
+        <h3>Upload Form</h3>
+
+        <label for="titleInput">Title</label>
+        <input id="titleInput" placeholder="Q2 Outlook Memo" />
+
+        <label for="contentInput" style="margin-top: 10px;">Content</label>
+        <textarea id="contentInput" placeholder="Paste document content..."></textarea>
+
+        <label for="advisorInput" style="margin-top: 10px;">Advisor IDs (comma-separated)</label>
+        <input id="advisorInput" placeholder="advisor-001,advisor-003" />
+
+        <div class="toolbar" style="margin-top: 12px;">
+          <button id="uploadBtn" class="btn btn-primary">Upload</button>
+        </div>
+
+        <div id="uploadStatus" class="status"></div>
+      </section>
+    </main>
+
+    <script>
+      (function boot() {
+        const msalSources = [
+          "https://alcdn.msauth.net/browser/2.39.0/js/msal-browser.min.js",
+          "https://cdn.jsdelivr.net/npm/@azure/msal-browser@2.39.0/lib/msal-browser.min.js",
+          "https://unpkg.com/@azure/msal-browser@2.39.0/lib/msal-browser.min.js"
+        ];
+
+        function loadScript(src) {
+          return new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = src;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+          });
+        }
+
+        async function ensureMsal() {
+          if (window.msal && window.msal.PublicClientApplication) {
+            return true;
+          }
+
+          for (const src of msalSources) {
+            try {
+              await loadScript(src);
+              if (window.msal && window.msal.PublicClientApplication) {
+                return true;
+              }
+            } catch (_) {
+              // Try next CDN source.
+            }
+          }
+          return false;
+        }
+
+        function loadApp() {
+          const appScript = document.createElement("script");
+          appScript.src = "./app.js";
+          document.body.appendChild(appScript);
+        }
+
+        ensureMsal().then((ok) => {
+          if (!ok) {
+            const session = document.getElementById("sessionInfo");
+            if (session) {
+              session.textContent = "MSAL failed to load from all CDNs. Check corporate proxy/firewall and reload.";
+              session.classList.add("err");
+            }
+            return;
+          }
+          loadApp();
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and update with your values
+
+resource_group_name = "aisearch-demo"
+location            = "centralus"
+openai_location     = "eastus"  # OpenAI has limited region availability
+resource_prefix     = "aisearch-demo"
+
+tags = {
+  Environment = "Demo"
+  Project     = "AI-Search-Security"
+  ManagedBy   = "Terraform"
+  Owner       = "YourName"
+}
+
+# Optional: Specify Azure AD group for SQL administrators
+# sql_admin_group_name = "SQL-Admins"
+
+embedding_model_name       = "text-embedding-ada-002"
+embedding_model_version    = "2"
+embedding_deployment_name  = "text-embedding-ada-002"
+embedding_deployment_capacity = 70  # TPM in thousands (tokens per minute)

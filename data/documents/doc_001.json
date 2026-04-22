@@ -1,0 +1,7 @@
+{
+  "title": "Q4 2024 Technology Sector Analysis - Client 001",
+  "content": "Executive Summary: The technology sector continues to demonstrate robust growth in Q4 2024, driven primarily by advancements in artificial intelligence and cloud computing infrastructure. Our analysis indicates strong performance across major tech companies with a particular emphasis on AI-driven solutions. Investment Recommendations: We recommend a diversified approach with 45% allocation to established tech giants (Microsoft, Apple, Google), 35% to mid-cap cloud infrastructure providers, and 20% to emerging AI startups. Risk Assessment: Market volatility remains moderate with potential headwinds from regulatory scrutiny on big tech. However, the long-term outlook remains positive with projected 18-22% annual returns. Portfolio Strategy: For client-001, we suggest rebalancing existing positions to increase exposure to AI and semiconductor manufacturers while maintaining defensive positions in dividend-paying tech stocks.",
+  "clientId": "client-001",
+  "documentType": "market-analysis",
+  "allowedAdvisors": ["advisor-001", "advisor-002"]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Fixed Income Strategy in Rising Rate Environment - Client 030",
+  "content": "Navigating bond markets during periods of rising interest rates requires strategic positioning to minimize duration risk while maintaining income generation. Market Context: Federal Reserve monetary policy continues tightening with target rate of 5.25-5.50%. Inflation moderating but remains above 2% target. Yield curve dynamics suggest potential recession risks balanced against persistent inflation concerns. Investment Strategy: Shorten portfolio duration to reduce interest rate sensitivity. Current recommendation: average duration of 3-4 years compared to traditional 7-10 year benchmarks. Instrument Selection: 40% investment-grade corporate bonds (3-5 year maturities, yields 5.5-6.2%), 25% floating rate notes to benefit from rising rates, 20% Treasury Inflation-Protected Securities (TIPS) for inflation hedge, 15% high-quality municipal bonds for tax efficiency. Sector Focus: Favor financial sector bonds (banks, insurance) that benefit from higher rates. Avoid long-duration utilities and REITs vulnerable to rate increases. Credit Quality: Maintain average credit rating of A- or better to prioritize capital preservation. Ladder Maturity Strategy: Bonds maturing in staggered intervals (2024, 2025, 2026, 2027) provide liquidity and reinvestment opportunities. Expected portfolio yield: 5.8% with moderate price stability.",
+  "clientId": "client-030",
+  "documentType": "market-analysis",
+  "allowedAdvisors": ["advisor-006", "advisor-008"]
+}
